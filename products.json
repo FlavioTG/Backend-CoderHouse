@@ -1,0 +1,56 @@
+[
+    {
+        "title": "Camiseta negra",
+        "description": "Camiseta de los AllBlacks ",
+        "price": 20,
+        "thumbnail": "https://example.com/camiseta.jpg",
+        "code": 99,
+        "stock": 100,
+        "id": 1
+    },
+    {
+        "title": "Camiseta roja",
+        "description": "Camiseta de independiente",
+        "price": 200,
+        "thumbnail": "https://example.com/camiseta.jpg",
+        "code": 999,
+        "stock": 45,
+        "id": 2
+    },
+    {
+        "title": "Camiseta celeste",
+        "description": "Camiseta de belgrano",
+        "price": 200,
+        "thumbnail": "https://example.com/camiseta.jpg",
+        "code": 9,
+        "stock": 30,
+        "id": 3
+    },
+    {
+        "title": "Camiseta azul",
+        "description": "Camiseta de Godoy Cruz",
+        "price": 200,
+        "thumbnail": "https://example.com/camiseta.jpg",
+        "code": 7,
+        "stock": 100,
+        "id": 4
+    },
+    {
+        "title": "Camiseta amarilla",
+        "description": "Camiseta de Aldosivi",
+        "price": 200,
+        "thumbnail": "https://example.com/camiseta.jpg",
+        "code": 6,
+        "stock": 32,
+        "id": 5
+    },
+    {
+        "title": "Camiseta blanca",
+        "description": "Camiseta de Quilmes",
+        "price": 300,
+        "thumbnail": "https://example.com/camiseta.jpg",
+        "code": 971,
+        "stock": 90,
+        "id": 6
+    }
+]
