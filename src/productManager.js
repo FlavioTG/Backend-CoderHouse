@@ -63,7 +63,11 @@ class ProductManager {
         try {
             const productsSearch = await this.#getProductsHide();
             if (!productsSearch.find((product) => product.id == id)) {
-                return "No se encontro el producto"
+                var status = {
+                    error: '123',
+                    messaje: 'El producto no fue encontrado'
+                };
+                return status
             }
             return productsSearch.find((product) => product.id == id);
         }catch (err){

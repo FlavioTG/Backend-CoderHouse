@@ -15,7 +15,7 @@ app.get("/getProducts", async (req,res)=>{
         try{
             const pm = new ProductManager('products.json');
             const products = await pm.getProducts();
-            return res.send(JSON.stringify(products));
+            return res.send((products));
         }catch(err){
             console.log(err);
         }
@@ -31,7 +31,7 @@ app.get("/getProducts", async (req,res)=>{
                     products_limited.push(products[i])
                 }
             }
-            return res.send(JSON.stringify(products_limited));
+            return res.send((products_limited));
         }catch(err){
             console.log(err);
         }
@@ -44,13 +44,25 @@ app.get("/getProducts/:code", async (req,res)=>{
 
     try{
         const pm = new ProductManager('products.json');
-        const products = await  pm.getProductByCode(code);
+        const products = await  pm.getProductById(code);
         return res.send(products)
 
     }catch(err){
         console.log(err);
     }
 })
+
+app.get("/*", async (req,res)=>{
+    const searchs = req.params.searchs
+
+    try{
+        return res.send("La página solicitada no esta disponible")
+
+    }catch(err){
+        console.log(err);
+    }
+})
+
 /*
     local:host:8000/
     localhost:8000/getproducts?limit=5
